@@ -12,5 +12,10 @@ def process_inputs():
     dropdown = request.form.get('input_dropdown', '')
     select = request.form.get('input_select', '')
     freeform = request.form.get('input_freeform', '')
-    return render_template("main_page.html", input_data=dropdown,
+    return render_template("main_page.html", input_data=dropdown, input_data1=select, input_data2=freeform,
                            output="You're a wizard %s." % name)
+#create a dictionary that maps variables to the input values
+#create functions for things like volume or area
+#output includes the answer
+#if there is an invalid value then the program should return an error
+#
